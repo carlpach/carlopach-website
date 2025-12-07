@@ -1,4 +1,8 @@
 /* Reset and Base Styles */
+:root {
+    --header-height: 80px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -61,7 +65,7 @@ nav {
 
 /* Hero Section */
 .hero {
-    margin-top: 80px;
+    margin-top: var(--header-height);
     min-height: 60vh;
     display: flex;
     align-items: center;
