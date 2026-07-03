@@ -1,89 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Carlo Pach - Artist Portfolio">
-    <title>Carlos Pach | Artist</title>
+    <title>Carlos Pach</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        canvas: '#fcfaf5',
+                        ink: '#1c1a17',
+                        muted: '#6b6660',
+                    },
+                    fontFamily: {
+                        sans: ['Helvetica Neue', 'Helvetica', 'Arial', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+                        title: ['Jost', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                    },
+                },
+            },
+        }
+    </script>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <header>
-        <nav>
-            <div class="logo">
-                <h1>Carlos Pach</h1>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+<body class="bg-canvas text-ink font-sans antialiased">
+    <header class="sticky top-0 z-10 flex items-center justify-between bg-canvas px-6 sm:px-10">
+        <h1 class="my-10 font-title text-3xl font-light tracking-[0.15em] sm:text-4xl">CARLOS PACH</h1>
+        <nav class="ml-auto">
+            <a href="#about" class="font-title text-lg text-muted">about</a>
         </nav>
     </header>
 
     <main>
-        <section id="home" class="hero">
-            <div class="hero-content">
-                <h2>Welcome to My Art World</h2>
-                <p>Exploring creativity through visual expression</p>
-            </div>
+        <section class="flex flex-col items-center px-4 pb-24">
+            <article class="mb-40 flex w-full max-w-2xl flex-col items-center gap-6 last:mb-0">
+                <h2 class="mt-8 text-sm uppercase tracking-[0.18em] text-muted">uno</h2>
+                <img src="assets/cuadro-cintas/cuadro-cintas-foto-frontal.jpg" alt="uno — vista frontal" loading="lazy" class="h-auto w-full">
+                <img src="assets/cuadro-cintas/cuadro-cintas-detalle.jpg" alt="uno — detalle" loading="lazy" class="h-auto w-full">
+            </article>
+
+            <article class="mb-40 flex w-full max-w-2xl flex-col items-center gap-6 last:mb-0">
+                <h2 class="mt-8 text-sm uppercase tracking-[0.18em] text-muted">dos</h2>
+                <img src="assets/cuadro-recorte/cuadro-recorte-foto-frontal.jpeg" alt="dos — vista frontal" loading="lazy" class="h-auto w-full">
+                <img src="assets/cuadro-recorte/cuadro-recorte-foto-detalle.jpg" alt="dos — detalle" loading="lazy" class="h-auto w-full">
+                <img src="assets/cuadro-recorte/cuadro-recorte-foto-detalle-esquina.jpeg" alt="dos — detalle de esquina" loading="lazy" class="h-auto w-full">
+            </article>
         </section>
 
-        <section id="about" class="about">
-            <div class="container">
-                <h2>About Me</h2>
-                <p>I'm Carlo Pach, an artist passionate about creating meaningful visual experiences. My work explores the intersection of traditional techniques and contemporary themes.</p>
-            </div>
-        </section>
-
-        <section id="portfolio" class="portfolio">
-            <div class="container">
-                <h2>Portfolio</h2>
-                <div class="gallery">
-                    <div class="gallery-item">
-                        <div class="placeholder">
-                            <p>Artwork 1</p>
-                        </div>
-                        <h3>Project Title 1</h3>
-                    </div>
-                    <div class="gallery-item">
-                        <div class="placeholder">
-                            <p>Artwork 2</p>
-                        </div>
-                        <h3>Project Title 2</h3>
-                    </div>
-                    <div class="gallery-item">
-                        <div class="placeholder">
-                            <p>Artwork 3</p>
-                        </div>
-                        <h3>Project Title 3</h3>
-                    </div>
-                    <div class="gallery-item">
-                        <div class="placeholder">
-                            <p>Artwork 4</p>
-                        </div>
-                        <h3>Project Title 4</h3>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="contact">
-            <div class="container">
-                <h2>Contact</h2>
-                <p>Interested in my work? Let's connect!</p>
-                <div class="contact-info">
-                    <p>Email: <a href="mailto:hello@carlopach.com">hello@carlopach.com</a></p>
-                </div>
-            </div>
+        <section id="about" class="mx-auto max-w-xl px-6 py-24 text-center text-lg text-muted">
+            <p>Carlo Pach is an artist working across painting and mixed media.</p>
         </section>
     </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Carlo Pach. All rights reserved.</p>
-        </div>
+    <footer class="py-12 text-center text-sm text-muted">
+        <p>&copy; 2026 carlos pach</p>
     </footer>
 </body>
 </html>
